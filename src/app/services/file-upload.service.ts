@@ -30,4 +30,8 @@ export class FileUploadService {
     return this.http.get(`${this.baseUrl}/files`);
   }
 
+  getConsolidado(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/consolidado`);
+  }
+
 }

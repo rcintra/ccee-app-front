@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-6 col-lg-4 mb-4">                
+        <div *ngFor="let c of consolidado | async" class="card" style="width: 18rem;">
+            <div class="card-header">
+                {{ c.regiao }}
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Geração: <strong>{{ c.geracao }}</strong></li>
+              <li class="list-group-item">Compra: <strong>{{ c.compra }}</strong></li>              
+            </ul>
+          </div>
+    </div>
+</div>

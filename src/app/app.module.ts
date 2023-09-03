@@ -15,6 +15,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
+import { ConsolidadoComponent } from './components/consolidado/consolidado.component';
 
 
 const materialModules = [
@@ -31,7 +32,8 @@ const materialModules = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    ConsolidadoComponent
   ],
   imports: [
     BrowserModule,
