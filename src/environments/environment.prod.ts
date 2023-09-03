@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:8080'
+  apiUrl: 'http://ccee-app-back-env.eba-fmepdxdp.us-east-1.elasticbeanstalk.com'
 };
