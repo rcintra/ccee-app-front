@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class FileUploadService {
 
-  private baseUrl = environment.apiUrl;
+  private baseUrl = environment.apiUrl + "/api";
 
   constructor(private http: HttpClient) { }
 
