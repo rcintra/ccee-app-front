@@ -1,13 +1,11 @@
-<div class="row">
-    <div class="col-sm-6 col-lg-4 mb-4">                
-        <div *ngFor="let c of consolidado | async" class="card" style="width: 18rem;">
-            <div class="card-header">
-                {{ c.regiao }}
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Geração: <strong>{{ c.geracao }}</strong></li>
-              <li class="list-group-item">Compra: <strong>{{ c.compra }}</strong></li>              
-            </ul>
-          </div>
+<div class="row row-cols-1 row-cols-md-3 g-4">    
+    <div *ngFor="let c of consolidado | async" class="col" style="width: 18rem;">
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title">{{ c.regiao }}</h5>          
+          <p class="card-text">Geração: <strong>{{ c.geracao }}</strong></p>
+          <p class="card-text">Compra: <strong>{{ c.compra }}</strong></p>
+        </div>
+      </div>
     </div>
-</div>
+</div>    
