@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 
 const materialModules = [
@@ -29,7 +30,8 @@ const materialModules = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
