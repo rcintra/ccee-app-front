@@ -32,12 +32,16 @@ export class FileUploadComponent implements OnInit {
       for (let i = 0; i < this.selectedFiles.length; i++) {
         this.upload(i, this.selectedFiles[i]);
       }
-
     }
   }
 
   upload(idx: number, file: File): void {
     this.progressInfos[idx] = { value: 0, fileName: file.name };
+    console.log(file.type);
+    if(file.type !== "text/xml") {      
+      this.message.push('O upload é permitido apenas arquivos XML.');
+      return;
+    } 
 
     if (file) {
         this.uploadService.upload(file).subscribe(
